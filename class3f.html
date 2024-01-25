@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewpoint">
+    <title>Login Page</title>
+</head>
+<body>
+    <input id ="value" type="text">
+    <button id ="btn">Click Here</button>
+    <p id ="demo"></p>
+
+
+<!--If Else case loop-->
+    <!-- <script>
+        const hour =new Date().getHours();
+        let greetings;
+        if(hour < 18){
+            greetings = "Good Day!";
+        }
+        else{
+            greetings = "Good Evening!";
+        }
+        document.getElementById("demo").innerHTML = greetings;
+    </script> -->
+
+<!--Switch Case Loop-->
+    <!-- <script>
+    //    document.getElementById("btn").addEventListener("click",function(){
+    //     const index=document.getElementById("value").value;
+    //     switch(index){
+    //         case '1':
+    //             document.write("Today is Monday");
+    //             break;
+    //         case '2':
+    //             document.write("Today is Tuesday");
+    //             break;
+    //         case '3':
+    //             document.write("Today is Wednesday or Friday");
+    //             break;
+    //         default:
+    //             document.write("Invalid Index");
+    //     }
+    //    })
+
+    document.getElementById("btn").addEventListener("click", function() {
+    const index = document.getElementById("value").value; // Correct case for getElementById
+
+    switch (index) {
+      case '1':
+        document.write("Today is Monday");
+        break;
+      case '2':
+        document.write("Today is Tuesday");
+        break;
+      case '3':
+      case '5': // Separate cases for 3 and 5
+        document.write("Today is Wednesday or Friday");
+        break;
+      default:
+        document.write("Invalid Index");
+        break;
+    }
+  });
+    </script> -->
+
+<!--For loop-->
+    <!-- <script>
+        const button =document.getElementById("btn");
+        button.addEventListener('click',function (){
+            const val =document.getElementById("value").value; // Correct case for getElementById
+            let result ="";
+            for(let i=0 ;i<=10;i++){
+                result += `${val} x ${i} = ${val * i}<br/>`;}
+            document.getElementById("demo").innerHTML=result;
+        })
+    </script> -->
+
+<!--While loop-->
+    <!-- <script>
+        const cars=["bmw","volvo","audi"];
+        var i=0;
+        let text ="";
+        while (cars[i]){
+            text+=cars[i]+"<br>";
+            i++;
+        }
+        document.getElementById("demo").innerHTML =text;
+    </script> -->
+    
+<!--Do While loop-->
+    <!-- <script>
+        const cars=["bmw","volvo","audi"];
+        var i=2;
+        let text ="";
+        do{
+            text+=cars[i]+"<br>";
+            i++;
+        } while (cars[i]);
+        document.getElementById("demo").innerHTML =text;
+    </script> -->
+
+<!--Mouse interraction-->    
+    <!-- <script>
+        var x= document.getElementById("btn");
+        x.addEventListener("mouseover",myFunction);
+        x.addEventListener("click",mySecondFunction);
+        x.addEventListener("mouseout",myThirdFunction);
+
+    function myFunction() {
+        document.getElementById("demo").innerHTML+="Moused over!<br>";}
+
+    function mySecondFunction() {
+        document.getElementById("demo").innerHTML += "Clicked!<br>";}
+
+    function myThirdFunction() {
+        document.getElementById("demo").innerHTML+="Moused out!<br>";}
+
+    </script> -->
+
+<!--Arrays Concatenation-->
+    <!-- <script>
+        const myGirls=["Cecilie","Lone"];
+        const myBoys= ["Emil","Tobias","Linus"];
+        const myChildren= myGirls.concat(myBoys);
+        document.getElementById("demo").innerHTML=myChildren;
+    </script> -->
+
+<!--Extra 1-->
+    <script>
+        const button =document.getElementById("btn");
+        button.addEventListener('click',function (){
+            const val =document.getElementById("value").value; // Correct case for getElementById
+            let result ="";
+            for(let i=0 ;i<=10;i++){
+                result += `${val} x ${i} = ${val * i}<br/>`;}
+            document.getElementById("demo").innerHTML=result;
+        })
+        button.addEventListener("dblclick", function(){
+            document.getElementsById("demo").innerHTML="Mouseover";
+            const color =x ? "red" : "black";
+            document.getElementById("demo").style.color= "red";
+        })
+</script>
+</body>
+</html>
+
