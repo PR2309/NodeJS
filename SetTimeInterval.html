@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function waitAndShow(){
+            //define a date and time variable
+            var systemdate= new date;
+            //display the updated time after every 4 second
+            document.getElementById("clock").innerHTML=systemdate.toLocaleTimeString()
+        }
+        // define time interval and call user-defined waitAndShow function
+        setInterval(waitAndShow,4000);
+    </script>
+    <h3>Updated time will show in every 4 seconds</h3>
+</body>
+</html>
