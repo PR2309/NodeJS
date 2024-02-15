@@ -12,7 +12,15 @@
 // });
 
 // Read file in server Sync
-
+var http = require('http'); 
+var fs=require('fs');
+http.createServer(function(req, res){  
+    res.writeHead(200,{'Content-Type':'text/html'});
+    var data=fs.readFileSync('input.txt');
+    res.write("Synchronous read: " + data.toString());
+    res.write("Program Ended");
+    res.end();
+}).listen(5500);
 
 // Read file in server Async
 var http= require('http');
