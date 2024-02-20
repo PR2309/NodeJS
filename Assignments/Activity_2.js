@@ -20,18 +20,18 @@ http.createServer(function(req, res){
     res.write("Synchronous read: " + data.toString());
     res.write("Program Ended");
     res.end();
-}).listen(5500);
+}).listen(5600);
 
-// Read file in server Async
-var http= require('http');
-var fs=require('fs');
-http.createServer(function(req, res){
-    res.writeHead(200,{'Content-Type':'text/html'});
-    fs.readFile('input.txt',function(err,data){
-        if(err){res.write(err);}
-        res.write("Asunchronous read: "+data.toString());
-    });
-    read.write("Program Done");
-    read.end();
-}).listen(5510);
+// // Read file in server Async
+// var http= require('http');
+// var fs=require('fs');
+// http.createServer(function(req, res){
+//     res.writeHead(200,{'Content-Type':'text/html'});
+//     fs.readFile('input.txt',function(err,data){
+//         if(err){res.write(err);}
+//         res.write("Asunchronous read: "+data.toString());
+//     });
+//     read.write("Program Done");
+//     read.end();
+// }).listen(5510);
 
